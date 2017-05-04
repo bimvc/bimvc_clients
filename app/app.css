@@ -1,0 +1,81 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+li{
+  cursor: pointer !important;
+}
+.scr {
+  overflow-y: auto;
+  height: 600px;
+  width: 240px !important;
+  padding: 30px 0 10px 10px !important;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+}
+.categoryAttrs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  margin-top: 30px;
+}
+.categoryAttrs li{
+  line-height: 18px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(0, 138, 206, 0.3);
+  color: #008ace;
+}
+.categoryAttrs li.active{
+  color: black;
+  background-color: #ebebcf;
+  border-color: #ebebcf;
+}
+.companies{
+  list-style-type:none;
+  margin: 30px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.companies li{
+  width: 45%;
+  margin: 0 15px 15px 0;
+  padding: 10px 20px;
+  height: 100px;
+  border: 1px solid rgba(0, 138, 206, 0.3);
+  overflow: hidden;
+}
+.ngdialog-close:before{
+  display: none !important;
+}
+.ngdialog-close{
+  display: none !important;
+}

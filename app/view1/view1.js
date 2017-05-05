@@ -88,7 +88,7 @@ angular.module('myApp.view1', ['ngRoute', 'ngDialog'])
             }
         };
 
-        $http.get('/content/clients.json')
+        $http.get('https://pltnm239.github.io/bimvc_clients/app/content/clients.json')
             .then(function(res){
                 $scope.companies = res.data;
                 ratingSort($scope.companies);
